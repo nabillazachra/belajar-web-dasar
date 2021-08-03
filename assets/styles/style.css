@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20px;
+    overflow: auto;
+}
+h2, h3{
+    color: #5E8B7E;
+    text-shadow: 0.3px 0.3px #000;
+}
+article p {
+    text-indent: 2em;
+}
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #5E8B7E;
+    text-align: center;
+}
+header {
+    display: inline;
+}
+.navigation {
+    background-color: #2F5D62;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+.navigation a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+.navigation a:active {
+    color: black;
+}
+.navigation li {
+    
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+.profile {
+    text-align: center;
+}
+.featured-image {
+    width: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-image {
+    width: 200px;
+}
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #5E8B7E;
+    text-align: center;
+    color: white;
+}
+#content {
+    float: left;
+    width: 75%;
+}
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+section td {
+    text-align: left;
+}
+section th {
+    text-align: center;
+}
+th img {
+    width: auto;
+    height: 30px;
+}
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+    .prev, .next {
+        font-size: 11px;
+    }
+}
+
+/* slider */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    /* margin-right: 30px; */
+    margin-left: -48%;
+  }
+
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-right: 30px;
+    /* margin-left: -400px; */
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  nav.active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+    
